@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   BackgroundColor="#ffffff"
+                   x:Class="Phonemusic.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="30, 30, 30, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+      <Label Text="Song app" FontSize="70" TranslationX="15" TextColor="#47a3ff"/>
+      <Button x:Name="songAddPage" TextColor="White" BorderWidth="0.5"  BackgroundColor="#ff3036" BorderColor="#c5c7c9" Text="Add a new song" IsEnabled="true" Clicked="OnAddPage" TranslationY="410"/>
+      <Button x:Name="songCreatorPage" TextColor="White" BorderWidth="0.5" BackgroundColor="#ff3036" BorderColor="#c5c7c9" Text="Creator" IsEnabled="true" Clicked="OnTextPage" TranslationY="420"/>
+    </StackLayout>
+</ContentPage>
